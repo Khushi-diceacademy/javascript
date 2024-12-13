@@ -1,0 +1,76 @@
+ES5 - ecmascript -> oops 
+there are three types of languages in the world of programming
+
+programming-> c,c++,c#, java,python  ........
+srcipting -> python, php, js , typescript 
+markup -> html and XML 
+
+interpreter and compiler 
+javascript -> interpreter
+async advance js 
+
+
+console.log("hey");
+console.warn("last warning ");
+console.error("ye error h ");
+alert("kese ho ??????")
+
+
+1.Print numbers from 1 to 10:
+2.Print even numbers from 1 to 200:
+3.Print odd numbers from 1 to 200:
+4.Print numbers from 10 to 1:
+5.Print the first 10 multiples of 15:
+6.Print the sum of numbers from 1 to 10:
+7.Print the factorial of 5:
+8.Print all numbers from 1 to 50 that are divisible by 3:
+9.Print the squares of numbers from 1 to 10:
+10.Print the sum of odd numbers from 1 to 50:
+11.FizzBuzz Problem: Print numbers from 1 to 100. For multiples of 3, print "Fizz", for multiples of 5, print "Buzz", and for multiples of both 3 and 5, print "FizzBuzz".'
+
+
+
+
+
+
+
+
+
+Topics to cover till december 
+1. 13/dec =  higher order function  map,reduce filter , foreach , forin , forof 
+2. 16/dec = objects objects methods array of objects 
+3. 17/dec = interview question higher order function 
+4. 18/dec = Dom document object model , 20 dec , 21 dec ---
+5. 23/dec = Async js -> advance js OOPS async js 
+
+20 jan -> react js -> 1.5 
+node js may 
+
+
+
+// let char = "hello"
+// console.log(char)
+// console.log(char.split('').reverse().join(""))
+// concat -> to merge the string and array it is known as concat
+// charAt -> we insert a index or a number to find the index of a particular character
+// functions ->
+
+// Find maximum and minimum both in an array create a function
+let arr = [10, 22, 33, 55, 77, 88, 99, 100, 1, 2, 3, 110, 102, 292, 192];
+if (arr.length === 0) {
+  console.log("this is an empty array");
+} else {
+  let min = arr[0];
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i=i+1) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  console.log(`maximum is ${max}`);
+  console.log(`minimum is ${min}`);
+}
