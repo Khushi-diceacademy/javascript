@@ -74,3 +74,6 @@ if (arr.length === 0) {
   console.log(`maximum is ${max}`);
   console.log(`minimum is ${min}`);
 }
+
+
+filter -> filter function ek esa function h jo hume filter out karne ki power deta h 

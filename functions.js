@@ -117,13 +117,58 @@
 
 // count the occurences of the character in a particular string
 
-function findoccurence(str, char) {
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === char) {
-      count++;
-    }
-  }
-  return count;
+// function findoccurence(str, char) {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === char) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(findoccurence("hello", "l"));'
+
+// let arr =[ 10,20,30,40,50];
+// let newarr= arr.map((elem)=>elem/2)
+// console.log(newarr)
+// console.log(arr)
+// map reduce filter
+
+// arr= []
+
+// let arr = ['apple','mango','grapes','kiwi','cheeku'];
+// let newarrr=arr.map((elem)=> elem.toUpperCase())
+// console.log(newarrr)
+
+// let arr= [1,2,3,4,5,5,56,7,8,10];
+// let newarr= arr.map((elem)=>elem**2)
+// console.log(newarr)
+
+// filter
+
+// let arr = [1, 2, 4, 5, 6, 7, 8, 10, 11, 12, 14];
+// let newarr = arr.filter((elem) => elem % 2 === 0);
+// console.log(newarr);
+
+// >3
+
+// let arr = ["apple", "snowwhite", "fox", "jin", "harry"];
+// let newarr = arr.filter((elem) => !elem.startsWith("h"));
+// console.log(newarr);
+
+// let arr = [1, 2, 3, 4, 4, 5, 6,100];
+// let newarr = arr.reduce((accu, ccu) => Math.max(accu, ccu));
+// console.log(newarr);
+
+
+// multiplication 
+// max 
+
+// foreach -> loop
+let arr= [1,2,4,4,5,556,6,7];
+for(const val in arr){
+  console.log(arr[val])
 }
-console.log(findoccurence("hello", "l"));
+
+
+// map,filter reduce , foreach, for of , for - in
