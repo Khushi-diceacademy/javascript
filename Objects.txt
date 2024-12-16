@@ -1,0 +1,105 @@
+In JavaScript, objects are collections of key-value pairs. Each key (or property) has a value that can be a primitive data type, another object, or a function
+
+const person = {
+  name: 'John',
+  age: 30,
+  greet: function() {
+    console.log('Hello!');
+  }
+};
+
+
+1. accessing
+2. Modifying
+2. Delete any property
+
+
+let person = {
+  name: 'John',
+  age: 30,
+  greet: function() {
+    console.log('Hello!');
+  }
+};
+
+person.name = 'ram'
+delete person.age
+person.age =34
+console.log(person.name)
+console.log(person.age)
+
+
+
+
+
+ Create an object named car with properties brand, model, and year. Add a method getCarInfo that returns a string with the car's details.
+
+
+ const car = {
+  brand: 'Toyota',
+  model: 'Camry',
+  year: 2021,
+  getCarInfo: function() {
+    return `${car.brand} ${car.model} (${car.year})`;
+  }
+};
+
+console.log(car.getCarInfo()); // Toyota Camry (2021)
+
+
+
+Homework
+1.Create an object named movie with properties title, director, year, and genres (an array). Add a method getMovieInfo that returns a string with the movie's title and director.
+
+
+2.Create an object employee with properties name, position, and salary. Add a method giveRaise that increases the salary by a given percentage.
+
+
+
+Array of Objects 
+
+
+const students = [
+  { name: 'Alice', age: 20, grade: 'A' },
+  { name: 'Bob', age: 22, grade: 'B' },
+  { name: 'Charlie', age: 23, grade: 'C' }
+];
+
+let neww = students.map((elem)=> `heyyy ${elem.name}`)
+console.log(neww)
+
+
+// create a Array of objects and use mapp print heyyyy
+
+
+//Create an array of objects representing books, each with properties title, author, and year. Write a function getBooksBeforeYear that takes a year and returns an array of books published before that year.
+
+const books = [
+  { title: '1984', author: 'George Orwell', year: 1959 },
+  { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+  { title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
+  { title: 'Brave New World', author: 'Aldous Huxley', year: 1970 }
+
+];
+
+function getBookBeforeThe(bookname, yearname) {
+  return bookname.filter((elem) => elem.year < yearname)
+}
+console.log(getBookBeforeThe(books,1950))
+
+
+
+2.Question: Write a function sortBooksByYear that takes an array of book objects and returns the books sorted by year in ascending order
+
+
+const books = [
+  { title: '1984', author: 'George Orwell', year: 1949 },
+  { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+  { title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
+  { title: 'Brave New World', author: 'Aldous Huxley', year: 1902 }
+];
+
+function sortbyyear(booksname) {
+  return booksname.sort((a, b) => a.year - b.year);
+}
+console.log(sortbyyear(books))

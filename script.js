@@ -80,7 +80,6 @@
 // 0*1= 0
 // 0*0 = 0
 
-
 // 1+0=1
 // 0+1=1
 // 1+1=1
@@ -135,4 +134,3 @@
 // var b = 20;
 // // console.log('the value of a is ',a ,'the value of b is ',b,'the sum of',a,"+",b,'=',a+b);
 // console.log(`the value of a is ${a} and the value of b is ${b}  and the sum of ${a} + ${b} = ${a+b} and the product of a and b is ${a*b} and the subtract of a and b is ${a-b}`);
-
