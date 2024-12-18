@@ -145,14 +145,81 @@
 
 // //Create an array of objects representing books, each with properties title, author, and year.filter out the year that are less than 1950
 //
-
-const books = [
-  { title: "1984", author: "George Orwell", year: 1959 },
-  { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
-  { title: "Brave New World", author: "Aldous Huxley", year: 1932 },
-  { title: "Brave New World", author: "Aldous Huxley", year: 1970 },
+// const books = [
+//   { title: "1984", author: "George Orwell", year: 1959 },
+//   { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+//   { title: "Brave New World", author: "Aldous Huxley", year: 1932 },
+//   { title: "Brave New World", author: "Aldous Huxley", year: 1970 },
+// ];
+// function getbookname(bookname, yearname) {
+//   return bookname.filter((elem) => elem.year > yearname);
+// }
+// console.log(getbookname(books, 1950));
+//var , let and const
+// var-> ES5 , let and const  - ES6
+// hoisting
+// 1.You have an array of user objects with name and age. Filter the age with making a function getage below than 18 .
+// 2.You have an array of user objects with name and age. Create a new array of objects containing only name and isAdult (true if age ≥ 18).
+// use reduce for above question
+const users = [
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+  { name: "tushar", age: 25 },
+  { name: "liza", age: 45 },
 ];
-function getbookname(bookname, yearname) {
-  return bookname.filter((elem) => elem.year > yearname);
-}
-console.log(getbookname(books, 1950));
+
+let merged = users.reduce((acc,user)=>{
+acc[user.name]= user.age;
+return acc
+},{})
+console.log(merged)
+
+/*
+Combine an array of objects into a single object where keys are name and values are age use reduce
+output:
+{tushar: 25, Bob: 16, Charlie: 30,liza:45 }
+ 
+*/
+
+// let oldest = users.reduce(
+//   (elem, max) => (elem.age > max.age ? elem : max),
+//   users[0]
+// );
+// console.log(oldest);
+
+// let oldest = users[0];
+// users.forEach((elem)=>{
+//     if(elem.age>oldest.age){
+//         oldest = elem
+//     }
+// })
+// console.log(oldest)
+// 6.use foreach loop find the greatest one
+
+// let sorted = users.sort((a, b) => b.age - a.age);
+// console.log(sorted);
+// let arr=[10,33,233,2,3,23,23];
+// arr.forEach((elem)=>{
+//     console.log(elem)
+// })
+// 5.Sort users by their age in descending order and ascending order.
+
+// let getage = users.find((elem) => elem.age > 20);
+// console.log(getage);
+
+// let totalAge = users.reduce((sum,username)=> sum + username.age,0)
+// console.log(totalAge)
+
+// 4.Find the first user whose age is greater than 20.
+
+// 3.Calculate the total age of all users in the array.
+
+// let newarr = users.map((elem) => ({
+//   name: elem.name,
+//   isAdult: elem.age >= 18,
+// }));
+// console.log(newarr)
+// function getone(username,agesuser){
+//     return username.filter((elem)=>elem.age<agesuser)
+// }
+// console.log(getone(users,18))

@@ -1,0 +1,136 @@
+1.You have an array of user objects with name and age. Filter the age with making a function getage below than 18 .
+
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+];
+
+function getage(usernames, userage) {
+  return usernames.filter((elem) => elem.age < userage);
+}
+console.log(getage(users, 18));
+
+
+2.You have an array of user objects with name and age. Create a new array of objects containing only name and isAdult (true if age ≥ 18).
+
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+];
+
+let newarr = users.map((elem) => ({
+  name: elem.name,
+  isAdult: elem.age >= 18,
+}));
+
+
+console.log(newarr)
+
+
+
+3.Calculate the total age of all users in the array.
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+];
+
+let totalAge = users.reduce((sum,username)=>sum+username.age,0)
+console.log(totalAge);
+
+
+4.Find the first user whose age is greater than 20.
+
+
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 16 },
+  { name: 'Charlie', age: 30 }
+];
+
+const user = users.find(user => user.age > 20);
+
+console.log(user);
+
+5.Sort users by their age in descending order and ascending order.
+
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+];
+
+const sorted = users.sort((a, b) => a.age - b.age);
+console.log(sorted);
+
+
+6.use foreach loop find the greatest one 
+
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+];
+
+let oldest = users[0];
+users.forEach((elem) => {
+  if (elem.age > oldest.age) {
+    oldest = elem;
+  }
+});
+
+console.log(oldest)
+
+
+
+use reduce for above question
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 16 },
+  { name: "Charlie", age: 30 },
+  { name: "Charlie", age: 60 },
+
+];
+
+let oldest = users.reduce((max,elem)=>(elem.age>max.age? elem:max),users[0])
+console.log(oldest)
+
+
+Combine an array of objects into a single object where keys are name and values are age use reduce
+output:
+{ ram: 25, Bob: 16, Charlie: 30 }
+
+
+
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 16 },
+  { name: 'Charlie', age: 30 }
+];
+
+
+let merged = users.reduce((acc,user)=>{
+acc[user.name] = user.age;
+return acc
+},{})
+console.log(merged)
+
+
+
+homework
+
+1.Use forEach to create a new array where each element is twice the value of the array
+2.Use forEach to calculate the sum of all elements in an array.
+3.Use forEach to collect all even numbers into a new array.
+4.Use forEach to count how many numbers are greater than 10 in an array.
+
+
+

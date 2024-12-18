@@ -1,0 +1,10 @@
+.hell{
+    color:rgb(225, 70, 225);
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.heaven {
+    height:300px;
+    width:300pxx;
+    object-fit: cover;
+}
