@@ -61,34 +61,90 @@ usye ye kar do ye hone pe
 //     items.textContent = "clicked!";
 //     items.style.backgroundColor = "cadetblue"
 //     items.style.color ="white";
-    
- 
+
 //   });
 // });
-// button 1 ,button 2  + styling 
+// button 1 ,button 2  + styling
+
+// let btn1 = document.querySelector('#btn1')
+// let btn2 = document.querySelector('#btn2')
+
+// btn1.addEventListener("click",function(){
+//     btn2.style.visibility = 'hidden';
+//     btn1.style.backgroundColor ="plum";
+//     btn1.style.color ="white";
+//     btn1.style.border ="2px solid white";
+//     btn1.style.padding ='12px 34px';
+
+// })
+// btn2.addEventListener("click",function(){
+//     btn1.style.visibility = 'hidden';
+//     btn2.style.backgroundColor ="plum";
+//     btn2.style.color ="white";
+//     btn2.style.border ="2px solid white";
+//     btn2.style.padding ='12px 34px';
+
+// })
+
+// bulb bana ke lana h
+
+// let btn = document.querySelector('#btn');
+// let img1 = document.querySelector('#one');
+// let img2 = document.querySelector('#two');
+// btn.addEventListener('click',function(){
+//     let src1 = img1.src;
+//     let src2 = img2.src;
+//     img1.src = src2;
+//     img2.src = src1
+// })
+
+// let mn = document.querySelector("#mn");
+// let res = document.querySelector("#res");
+// let flag = 0;
+
+// mn.addEventListener("click", function () {
+//   if (flag == 0) {
+//     res.style.left = "0%";
+//     res.style.transition = "0.7s";
+//     flag = 1;
+//     mn.innerHTML = ``
+//   } else {
+//     res.style.left = "-60%";
+//     res.style.transition = "0.7s";
+//     flag = 0;
+
+//   }
+// });
+/*
+ homework -> top navigation 
+ checkbox - > message you are checked !
+
+ 
+ */
+
+let home = document.querySelector("#home");
+let contact = document.querySelector("#contact");
+let about = document.querySelector("#about");
+let hometext = document.querySelector("#hometext");
+let abouttext = document.querySelector("#abouttext");
+let contacttext = document.querySelector("#contacttext");
 
 
-let btn1 = document.querySelector('#btn1')
-let btn2 = document.querySelector('#btn2')
-
-btn1.addEventListener("click",function(){
-    btn2.style.visibility = 'hidden';
-    btn1.style.backgroundColor ="plum";
-    btn1.style.color ="white";
-    btn1.style.border ="2px solid white";
-    btn1.style.padding ='12px 34px';
-
-
+home.addEventListener("click",function(){
+    saretexthatao()
+    hometext.style.display = 'block'
 })
-btn2.addEventListener("click",function(){
-    btn1.style.visibility = 'hidden';
-    btn2.style.backgroundColor ="plum";
-    btn2.style.color ="white";
-    btn2.style.border ="2px solid white";
-    btn2.style.padding ='12px 34px';
 
-
+contact.addEventListener("click",function(){
+    saretexthatao()
+    contacttext.style.display = 'block'
+})
+about.addEventListener("click",function(){
+    saretexthatao()
+    abouttext.style.display = 'block'
 })
 
-
-// bulb bana ke lana h 
+function saretexthatao(){
+document.querySelectorAll('h3').forEach((elem)=>{
+    elem.style.display = 'none'
+})}
